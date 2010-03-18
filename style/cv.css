@@ -61,5 +61,6 @@ ul.about, .about ul.category {
 }
 
 .about .item {
+	display: none;
 	margin-left: 30px;
 }
