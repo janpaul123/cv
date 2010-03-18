@@ -65,6 +65,10 @@ ul.about, .about ul.category {
 	background-color: #ddd;
 }
 
+.about .category li.static:hover {
+	background-color: #eee;
+}
+
 .about ul.category {
 	margin-left: 30px;
 }
