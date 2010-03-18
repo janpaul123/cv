@@ -1,12 +1,14 @@
 $(document).ready(function() {
 	$('.about > li').click(function(event) {
-		$(this).children('.category').toggle('fast');
-		event.stopImmediatePropagation();
-		event.preventDefault();
+		if (!$(event.target).is('a')) {
+			$(this).children('.category').toggle('fast');
+			event.stopImmediatePropagation();
+		}
 	});
 	$('.category > li').click(function(event) {
-		$(this).children('.item').toggle('fast');
-		event.stopImmediatePropagation();
-		event.preventDefault();
+		if (!$(event.target).is('a')) {
+			$(this).children('.item').toggle('fast');
+			event.stopImmediatePropagation();
+		}
 	});
 });

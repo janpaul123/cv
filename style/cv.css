@@ -7,18 +7,26 @@ html {
 }
 
 body {
+	color: black;
 	background-color: white;
 	height: 100%;
 	margin: auto;
 	width: 650px;
 }
 
+a {
+	color: black;
+}
+
 .content {
 	padding: 30px;
 }
 
-.top, .top a {
+.top {
 	overflow: auto;
+}
+
+.top, .top a {
 	color: #666;
 }
 
