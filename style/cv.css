@@ -65,8 +65,15 @@ ul.about, .about ul.category {
 	background-color: #ddd;
 }
 
+.about li.static:hover {
+	background-color: white;
+	cursor: auto;
+}
+
 .about .category li.static:hover {
 	background-color: #eee;
+	cursor: pointer;
+	cursor: hand;
 }
 
 .about ul.category {
