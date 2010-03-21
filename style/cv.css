@@ -95,3 +95,54 @@ ul.about, .about ul.category {
 	display: none;
 	margin-left: 30px;
 }
+
+.print {
+	display: none;
+	font-style: italic;
+}
+
+.category li, .about .item {
+	page-break-inside: avoid;
+}
+
+h2 {
+	page-break-after: avoid;
+}
+
+ul.category {
+	page-break-before: avoid;
+}
+
+@media print {
+	.about ul, .about li, .about .item, .print {
+		display: block;
+	}
+	
+	span.print {
+		display: inline;
+	}
+	
+	.about a:link, a:visited
+	{
+		color: black;
+		background: transparent;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	
+	abbr,
+	acronym
+	{
+		border-bottom: none;
+		font-variant: normal;
+		font-style: italic;
+	}
+	
+	abbr[title]:after,
+	acronym[title]:after
+	{
+		content: ” (” attr(title) “)”;
+		font-size: 90%;
+		font-style: normal;
+	}
+}
