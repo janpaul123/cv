@@ -11,6 +11,7 @@ body {
 	height: 100%;
 	margin: auto;
 	width: 650px;
+	text-align: justify;
 }
 
 a {
@@ -37,6 +38,7 @@ a {
 .contact {
 	float: right;
 }
+
 
 .about h2 {
 	margin-bottom: 4px;
@@ -98,6 +100,9 @@ ul.about, .about ul.category {
 
 .print {
 	display: none;
+}
+
+.site {
 	font-style: italic;
 }
 
@@ -120,6 +125,10 @@ ul.category {
 	
 	span.print {
 		display: inline;
+	}
+	
+	.noprint {
+		display: none;
 	}
 	
 	.about a:link, a:visited
