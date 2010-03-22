@@ -120,11 +120,11 @@ ul.category {
 
 @media print {
 	.about ul, .about li, .about .item, .print {
-		display: block;
+		display: block !important;
 	}
 	
 	span.print {
-		display: inline;
+		display: inline !important;
 	}
 	
 	.noprint {
