@@ -134,11 +134,19 @@ ul.category {
 		display: none;
 	}
 	
-	.about a:link, a:visited
+	.about a:link, .about a:visited
 	{
 		color: black;
 		background: transparent;
 		font-weight: bold;
+		text-decoration: none;
+	}
+	
+	.top a:link, .top a:visited
+	{
+		color: #666;
+		background: transparent;
+		font-weight: normal;
 		text-decoration: none;
 	}
 	
