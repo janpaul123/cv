@@ -107,6 +107,7 @@ ul.about, .about ul.category {
 
 .site {
 	font-style: italic;
+	text-align: left;
 }
 
 .category li, .about .item {
