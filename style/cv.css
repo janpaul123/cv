@@ -122,6 +122,14 @@ ul.category {
 	page-break-before: avoid;
 }
 
+p {
+	margin-bottom: 0.5em;
+}
+
+p.last {
+	margin-bottom: 0;
+}
+
 @media print {
 	.about ul, .about li, .about .item, .print {
 		display: block !important;
