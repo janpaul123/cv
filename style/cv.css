@@ -53,11 +53,11 @@ a {
 
 ul.about, .about ul.category {
 	list-style: none;
-	margin: 0px;
+	margin: 0;
 }
 
 .about li {
-	padding: 3px 20px 3px 7px;
+	padding: 3px 20px 3px 0px;
 	cursor: pointer;
 	cursor: hand;
 }

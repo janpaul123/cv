@@ -5,13 +5,18 @@ $(document).ready(function() {
 			event.stopImmediatePropagation();
 		}
 	});
+	
 	$('.category > li').click(function(event) {
 		if (!$(event.target).is('a')) {
-			$children = $(this).children('.item')
+			$children = $(this).children('.item');
 			if ($children.length > 0) {
 				$children.toggle('fast');
 				event.stopImmediatePropagation();
 			}
 		}
 	});
+
+	var email = 'j' + '@' + 'npaulpos';
+	email += '.ma';
+	$('#email').html('<a href="mailto:' + email + '">' + email + '</a>');
 });
