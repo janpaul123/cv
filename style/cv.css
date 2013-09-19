@@ -139,15 +139,15 @@ p.last {
 	.about ul, .about li, .about .item, .print {
 		display: block !important;
 	}
-	
+
 	span.print {
 		display: inline !important;
 	}
-	
+
 	.noprint {
 		display: none;
 	}
-	
+
 	.about a:link, .about a:visited
 	{
 		color: black;
@@ -155,7 +155,7 @@ p.last {
 		font-weight: bold;
 		text-decoration: none;
 	}
-	
+
 	.top a:link, .top a:visited
 	{
 		color: #666;
@@ -163,7 +163,7 @@ p.last {
 		font-weight: normal;
 		text-decoration: none;
 	}
-	
+
 	abbr,
 	acronym
 	{
@@ -171,7 +171,7 @@ p.last {
 		font-variant: normal;
 		font-style: italic;
 	}
-	
+
 	abbr[title]:after,
 	acronym[title]:after
 	{
