@@ -23,6 +23,11 @@ a {
 	color: black;
 }
 
+em {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
 .content {
 	background-color: white;
 	padding: 30px;
@@ -136,9 +141,26 @@ p.last {
 }
 
 @media print {
+  html {
+    font-size: 10px;
+  }
+
 	.about ul, .about li, .about .item, .print {
 		display: block !important;
 	}
+
+  .about li {
+    padding-right: 0;
+  }
+
+  .about ul.category {
+    margin-left: 0;
+  }
+
+  .about .item {
+    display: none;
+    margin-left: 15px;
+  }
 
 	span.print {
 		display: inline !important;
@@ -179,4 +201,8 @@ p.last {
 		font-size: 90%;
 		font-style: normal;
 	}
+}
+
+.short {
+  display: none !important;
 }
