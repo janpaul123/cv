@@ -68,33 +68,23 @@ ul.about, .about ul.category {
 
 .about li {
 	padding: 3px 20px 3px 0px;
-	cursor: pointer;
-	cursor: hand;
 }
 
-.about li:hover {
-	background-color: #eee;
+.about .category li {
+	cursor: pointer;
+	cursor: hand;
 }
 
 .about .category li:hover {
 	background-color: #ddd;
 }
 
-.about li.static {
+.about .category li.static {
 	cursor: auto;
 }
 
-.about li.static:hover {
-	background-color: white;
-}
-
-.about .category li.static {
-	cursor: pointer;
-	cursor: hand;
-}
-
 .about .category li.static:hover {
-	background-color: #eee;
+	background-color: #fff;
 }
 
 .about ul.category {
