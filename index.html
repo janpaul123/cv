@@ -153,7 +153,7 @@
 			<div class="block">
 				<div class="date">2011-2012</div>
 				<h2>MSc in Computer Science, Oxford</h2><br>
-				Thesis project: programming course aimed at making the first two hours of learning programming as incredible as possible. Courses include multithreaded database design (C++), logic programming, machine learning, and computational linguistics. Got a scholarship. Some programming competitions. C++ and JS.
+				Thesis project: programming course aimed at making the first two hours of learning programming as incredible as possible. Courses include multithreaded database design (C++), logic programming, machine learning, and computational linguistics. Got a scholarship. Did some programming competitions. C++ and JS.
 			</div>
 		</div>
 		<div class="block-container">
@@ -193,3 +193,15 @@
 	</div>
 </body>
 </html>
+
+<!-- 
+Commands to generate videos:
+ffmpeg -i zaplib-logo.mov -c:v libx264 -movflags +faststart -pix_fmt yuv420p -crf 20 -f mp4 -filter:v "setpts=0.75*PTS" zaplib.mp4
+ffmpeg -i zaplib-logo.mov -crf 25 -filter:v "setpts=0.75*PTS" -f webm zaplib.webm
+ffmpeg -i 3d-orig.webm -c:v libx264 -movflags +faststart -pix_fmt yuv420p -crf 20 -filter:v "setpts=0.5*PTS,scale=618:392" -f mp4 3d.mp4
+ffmpeg -i 3d-orig.webm -crf 26 -filter:v "setpts=0.5*PTS,scale=618:392" -f webm 3d.webm
+ffmpeg -i remix-orig.gif -filter:v "setpts=0.3*PTS,scale=618:-1" remix.webm
+ffmpeg -i remix-orig.gif -filter:v "setpts=0.3*PTS,scale=618:-1,crop=618:342:0:0" -c:v libx264 -pix_fmt yuv420p -movflags +faststart -crf 20 -f mp4 remix.mp4
+ffmpeg -i jsdares-orig.mp4 -t 00:01:30 -c:v libx264 -movflags +faststart -pix_fmt yuv420p -crf 20 -filter:v "crop=1084:564:8:48,setpts=0.75*PTS,scale=618:-1" -f mp4 jsdares.mp4
+ffmpeg -i jsdares-orig.mp4 -t 00:01:30 -crf 25 -filter:v "crop=1084:564:8:48,setpts=0.75*PTS,scale=618:-1" -f webm jsdares.webm
+-->
