@@ -24,8 +24,8 @@ body {
 video, img {
 	/*box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 80%);*/
 	float: left;
-	margin-right: 2em;
-	margin-bottom: 15px;
+	margin-right: 1.5em;
+	margin-bottom: 0.5em;
 	max-width: 309px;
   width: 100%;
 }
@@ -48,9 +48,21 @@ em {
   font-weight: normal;
 }
 
+h2 {
+	font-size:  140%;
+	font-weight: 700;
+	margin: 0;
+	display: inline;
+}
+
 .content {
 	background-color: white;
 	padding: 2em 2em 1em;
+}
+
+.block-container {
+	overflow: hidden;
+	margin: 1em 0;
 }
 
 .block {
@@ -66,6 +78,10 @@ em {
 }
 
 @media screen and (max-width: 600px) {
+	.block-container {
+		margin: 2em 0;
+	}
+
 	.block {
 		display: inline-block;
 	}
