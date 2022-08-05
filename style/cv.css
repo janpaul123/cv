@@ -11,16 +11,36 @@ html {
 }
 
 body {
-	color: black;
+	color: #222;
 	background: transparent;
 	height: 100%;
 	margin: auto;
-	width: 650px;
-	text-align: justify;
+	max-width: 900px;
+	text-align: left;
+	font-size: 14px;
+	line-height: 1.35;
+}
+
+video {
+	box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 80%);
+	float: left;
+	margin-right: 2em;
+	margin-bottom: 15px;
+	max-width: 309px;
+  width: 100%;
+}
+
+.date {
+	font-size: 80%;
+	color: #555;
 }
 
 a {
 	color: black;
+}
+
+strong {
+	color: #000;
 }
 
 em {
@@ -30,96 +50,21 @@ em {
 
 .content {
 	background-color: white;
-	padding: 30px;
+	padding: 2em 2em 1em;
 }
 
-.top {
-	overflow: auto;
+.block {
+	break-inside: avoid;
 }
 
-.top, .top a {
-	color: #666;
-}
-
-.personal {
-	float: left;
-}
-
-.contact {
-	float: right;
-}
-
-.info {
-	margin-bottom: 20px;
-}
-
-.about h2 {
-	margin-bottom: 4px;
-}
-
-.about h3 {
-	margin-bottom: 4px;
-}
-
-ul.about, .about ul.category {
-	list-style: none;
-	margin: 0;
-}
-
-.about li {
-	padding: 3px 20px 3px 0px;
-}
-
-.about .category li {
-	cursor: pointer;
-	cursor: hand;
-}
-
-.about .category li:hover {
-	background-color: #ddd;
-}
-
-.about .category li.static {
-	cursor: auto;
-}
-
-.about .category li.static:hover {
-	background-color: #fff;
-}
-
-.about ul.category {
-	margin-left: 30px;
-}
-
-.about .category .time {
-	float: right;
-	color: #555;
-}
-
-.about .item {
-	display: none;
-	margin-left: 30px;
+@media screen and (max-width: 600px) {
+	.block {
+		display: inline-block;
+	}
 }
 
 .print {
 	display: none;
-}
-
-.site {
-	font-style: italic;
-	text-align: left;
-}
-
-.category li, .about .item {
-	page-break-inside: avoid;
-}
-
-h2 {
-	page-break-after: avoid;
-}
-
-ul.category {
-	page-break-before: avoid;
 }
 
 p {
@@ -131,68 +76,15 @@ p.last {
 }
 
 @media print {
-  html {
-    font-size: 10px;
-  }
-
-	.about ul, .about li, .about .item, .print {
-		display: block !important;
-	}
-
-  .about li {
-    padding-right: 0;
-  }
-
-  .about ul.category {
-    margin-left: 0;
-  }
-
-  .about .item {
-    display: none;
-    margin-left: 15px;
+  body {
+    font-size: 12px;
   }
 
 	span.print {
 		display: inline !important;
 	}
 
-	.noprint {
+	video {
 		display: none;
 	}
-
-	.about a:link, .about a:visited
-	{
-		color: black;
-		background: transparent;
-		font-weight: bold;
-		text-decoration: none;
-	}
-
-	.top a:link, .top a:visited
-	{
-		color: #666;
-		background: transparent;
-		font-weight: normal;
-		text-decoration: none;
-	}
-
-	abbr,
-	acronym
-	{
-		border-bottom: none;
-		font-variant: normal;
-		font-style: italic;
-	}
-
-	abbr[title]:after,
-	acronym[title]:after
-	{
-		content: ” (” attr(title) “)”;
-		font-size: 90%;
-		font-style: normal;
-	}
-}
-
-.short {
-  display: none !important;
 }
