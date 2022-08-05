@@ -21,7 +21,7 @@ body {
 	line-height: 1.35;
 }
 
-video {
+video, img {
 	/*box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 80%);*/
 	float: left;
 	margin-right: 2em;
@@ -96,7 +96,7 @@ p.last {
 		display: inline !important;
 	}
 
-	video {
+	video, img {
 		display: none;
 	}
 }
