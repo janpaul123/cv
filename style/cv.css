@@ -22,7 +22,7 @@ body {
 }
 
 video {
-	box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 80%);
+	/*box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 80%);*/
 	float: left;
 	margin-right: 2em;
 	margin-bottom: 15px;
