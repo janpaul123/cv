@@ -38,7 +38,7 @@
 		</p> -->
 
 		<p class="print">
-			Please find an interactive version of this document online at <a href="http://janpaulposma.nl/cv">janpaulposma.nl/cv</a>.
+			<strong>Please find an interactive version of this document online at janpaulposma.nl/cv</strong>
 		</p>
 
 		<div style="margin-bottom: 2em"></div>
@@ -64,7 +64,7 @@
 			<div class="block">
 				<div class="date">2021-2022</div>
 				<h2>Zaplib (cofounder / CTO)</h2><br>
-				Speeding up heavy web applications with Rust and WebAssembly. Incubated at Cruise (~10x speedup), then started company and raised from top devtools investors (2MM at 20). Managed team of 3 eng, worked with several pilot customers. Rust, low-level JS, C/C++, shaders/GPU programming, custom threading, custom memory management, custom linking of native app against Chromium/V8. Invalidated business thesis, returned 100% of the investment.
+				Speeding up heavy web applications with Rust and WebAssembly. Incubated at Cruise (~10x speedup), managed team of 3 eng. Then found a cofounder, started a company, raised from top devtools investors (2MM at 20), and worked with several pilot customers. Rust, low-level JS, C/C++, shaders/GPU programming, custom threading, custom memory management, custom linking of native app against Chromium/V8. Invalidated business thesis, returned 100% of the investment.
 			</div>
 		</div>
 
@@ -76,7 +76,7 @@
 			<div class="block">
 				<div class="date">2018-2020</div>
 				<h2>Cruise (tech lead / L7)</h2><br>
-				Self-driving car company. Tech lead on robotics debugging tool Webviz (later spun off into a startup, Foxglove). Grew into the most widely used and highly rated internal tool. Low-level JS, C++, WebAssembly, shaders/GPU programming, high-throughput data architecture, extension APIs, strong quality controls (safety-critical adjacent). Led team of 8 engineers, coordinated with 10+ teams. Also cross-company hiring ("bar raiser"), some work on behavior/manoeuver planning and vehicle platform software (C++).
+				Self-driving car company. Tech lead on robotics debugging tool Webviz (later spun off into a startup, Foxglove). Grew into the most widely used and highly rated internal tool. Low-level JS, C++, WebAssembly, shaders/GPU programming, high-throughput data architecture, extension APIs, strong quality controls (safety-critical adjacent). Led team of 8 engineers, coordinated with 10+ teams. Also cross-company hiring ("bar raiser"). And some work on behavior/manoeuver planning and vehicle platform software (C++, Python).
 			</div>
 		</div>
 
@@ -138,11 +138,11 @@
 				<h2>Audivididici</h2><br>
 				Language learning tool
 			</div>
-			<!-- <div class="small-block">
+			<div class="small-block">
 				<div class="date">2004-2011</div>
 				<h2>JPP Solutions</h2><br>
-				Webapp consulting
-			</div> -->
+				Webapp consulting in high school and college
+			</div>
 		</div>
 
 		<div class="block-container">
@@ -153,7 +153,7 @@
 			<div class="block">
 				<div class="date">2011-2012</div>
 				<h2>MSc in Computer Science, Oxford</h2><br>
-				Thesis project: programming course aimed at making the first two hours of learning programming as incredible as possible. Courses include multithreaded database design (C++), logic programming, machine learning, and computational linguistics. Got a scholarship. Did some programming competitions. C++ and JS.
+				Thesis project: programming course aimed at making the first two hours of learning programming as incredible as possible. Coursework include multithreaded database design (C++), logic programming, machine learning, and computational linguistics. Got a scholarship. Did some programming competitions. C++ and JS.
 			</div>
 		</div>
 		<div class="block-container">
@@ -164,7 +164,7 @@
 			<div class="block">
 				<div class="date">2008-2011</div>
 				<h2>BSc in Computer Science (cum laude), Groningen</h2><br>
-				Thesis project: better editing UI for Wikipedia (9.5/10 grade). Courses in algorithms, computer graphics, engineering management (led student team for IKEA), AI/ML, signal processing, compilers, correctness proofs, etc. Minor in math: group theory, cryptography, complex analysis, numeric methods. Some programming competitions (won gold in one). Java and C++. Some Matlab and Magma.
+				Thesis project: better editing UI for Wikipedia (9.5/10 grade). Coursework in algorithms, computer graphics, engineering management (led student team for IKEA), AI/ML, signal processing, compilers, correctness proofs, etc. Minor in math: group theory, cryptography, complex analysis, numeric methods. Some programming competitions (won gold in one). Java and C++. Some Matlab and Magma.
 			</div>
 		</div>
 		<div class="block-container">
@@ -190,12 +190,6 @@
 			<!-- pinpointed <strong>5 browser bugs</strong> and counting, --> <!-- https://code.google.com/p/chromium/issues/detail?id=421206, https://bugzilla.mozilla.org/show_bug.cgi?id=912513, https://code.google.com/p/chromium/issues/detail?id=136901, https://code.google.com/p/chromium/issues/detail?id=136822, https://code.google.com/p/chromium/issues/detail?id=376139 -->
 			and once used <strong>25 wine glasses</strong> in a project for MTV. <!-- http://janpaulposma.nl/glassharp -->
 		</div>
-		
-		<div class="info print">
-			<strong class="less-relevant">
-				Please find an interactive version of this document online at <a href="http://janpaulposma.nl/cv">janpaulposma.nl/cv</a>.
-			</strong>
-		</div>
 	</div>
 </body>
 </html>
@@ -210,4 +204,8 @@ ffmpeg -i remix-orig.gif -filter:v "setpts=0.3*PTS,scale=618:-1" remix.webm
 ffmpeg -i remix-orig.gif -filter:v "setpts=0.3*PTS,scale=618:-1,crop=618:342:0:0" -c:v libx264 -pix_fmt yuv420p -movflags +faststart -crf 20 -f mp4 remix.mp4
 ffmpeg -i jsdares-orig.mp4 -t 00:01:30 -c:v libx264 -movflags +faststart -pix_fmt yuv420p -crf 20 -filter:v "crop=1084:564:8:48,setpts=0.75*PTS,scale=618:-1" -f mp4 jsdares.mp4
 ffmpeg -i jsdares-orig.mp4 -t 00:01:30 -crf 25 -filter:v "crop=1084:564:8:48,setpts=0.75*PTS,scale=618:-1" -f webm jsdares.webm
+ffmpeg -framerate 1 -pattern_type glob -i 'video/*.png' -c:v libx264 -movflags +faststart -pix_fmt yuv420p -crf 15 -filter:v "crop=400:250:0:40" ../cv/media/cg-slow.mp4
+ffmpeg -framerate 1 -pattern_type glob -i 'video/*.png' -crf 15 -filter:v "crop=400:250:0:40" -f webm ../cv/media/cg-slow.webm
+ffmpeg -framerate 0.5 -pattern_type glob -i '*.jpg' -c:v libx264 -movflags +faststart -pix_fmt yuv420p -crf 15 pimpmybike.mp4
+ffmpeg -framerate 0.5 -pattern_type glob -i '*.jpg'  -crf 15 -f webm pimpmybike.webm
 -->

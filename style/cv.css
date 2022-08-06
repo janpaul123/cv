@@ -71,7 +71,7 @@ h2 {
 
 .small-block {
 	display: inline-block;
-  width: 160px;
+  width: 11.5em;
   margin-right: 1em;
   margin-bottom: 1em;
   vertical-align: top;	 
@@ -91,7 +91,7 @@ h2 {
 	}
 }
 
-.print {
+p.print {
 	display: none;
 }
 
@@ -108,8 +108,8 @@ p.last {
     font-size: 12px;
   }
 
-	span.print {
-		display: inline !important;
+	p.print {
+		display: block;
 	}
 
 	video, img {
