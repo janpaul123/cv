@@ -23,7 +23,6 @@ body {
 
 video, img {
 	box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 80%);
-	float: left;
 	margin-right: 1.5em;
 	margin-bottom: 0.5em;
 	width: 309px;
@@ -62,6 +61,7 @@ h2 {
 .block-container {
 	overflow: hidden;
 	margin: 1em 0;
+	display: flex;
 }
 
 .block {
@@ -79,6 +79,7 @@ h2 {
 @media screen and (max-width: 600px) {
 	.block-container {
 		margin: 2em 0;
+		flex-direction: column;
 	}
 
 	.block {
